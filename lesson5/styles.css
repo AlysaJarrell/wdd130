@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    margin: 30px;
+}
+
+.top {
+    background-color: red;
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+}
+
+.middle {
+    background-color: blue;
+    margin: 0 auto;
+    padding: 75px;
+    width: 70%;
+}
+
+.bottom {
+    background-color: green;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.littleBoxes{
+    margin: 30px auto;
+}
+
+#left{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#right{
+    background-color: yellow;
+    height: 100px;
+    width:100px;
+    float:right;
+}

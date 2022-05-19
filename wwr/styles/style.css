@@ -1,3 +1,8 @@
+/* import fonts for the website */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Sedgwick+Ave&display=swap');
+/* Font 'Comic Neue will be used primarily for the body and paragraphs of the website (it is also used in the footer)
+Font 'Sedwick Ave' will be used for most of the headers and the nav bar */
+
 /* setting sizing (for majority) */
 #content {
     max-width: 1600px;
@@ -12,13 +17,23 @@
     height: 725px;
 }
 
-.logo, .icon {
+.logo {
+    width: 100px;
+    margin: 15px 10px;
+}
+
+.icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
     width: 100%;
 }
+
+/* #logo_link {
+    padding: 10px;
+} */
 
 /* here we are adding background colors and text 
 colors to the various elements in our html file
@@ -29,35 +44,58 @@ colors to the various elements in our html file
 
 body {
     background-color: whitesmoke;
+    font-family: "Comic Neue", Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
 }
+
+h1, h2, h3 {
+    font-family: "Sedgwick Ave";
+}
+h2 {
+    margin:0;
+}
+
 header {
     background-color:  #386641;
-    padding: 15px;
+    padding: 17px;
     color: whitesmoke;
+    font-family: "Sedgwick Ave";
 }
-#headerNav, nav a {
+
+#headerNav {
+    text-align: center;
+}
+nav a {
     background-color: #f6f5ae;
     color: #164E79;
-    padding: 15px;
     text-decoration: none;
+    padding: 10px 35px;
 }
 
 nav a:hover {
     background-color: #99d17b;
     color: whitesmoke; 
 }
-
-.home-title, h4, .msg h2 {
+.home-title {
     color: #164E79;
+    font-size: 2em;
+    margin-top: 10px;
 }
-.msg p {
-    color: #386641;
+
+h4, .msg h2 {
+    color: #164E79;
 }
 
 .book, .join{
     background-color: #386641;
     color: whitesmoke;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -65,19 +103,50 @@ nav a:hover {
     color: #72c3d5;
 }
 
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #164E79;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
 #background {
     background-color: #386641;
-    color: whitesmoke
+    color: whitesmoke;
+}
+
+.mountains{
+    margin: 100px 0 150px 0;
 }
 
 .msg {
     background-color: #f6f5ae;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg p {
+    color: #386641;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
+footer{
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer .social img {
+    padding-top: 15px;
+}
 footer, footer a, footer h3 {
     background-color: #164E79;
     color: whitesmoke;
     text-decoration: none;
+    font-family: "Comic Neue", Helvetica, sans-serif;
 }
 
 footer h3 a:hover {
