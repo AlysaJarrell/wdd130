@@ -1,0 +1,30 @@
+.parent {
+    display: grid;
+    grid-template-columns: (4, 1fr);
+    grid-template-rows: 100px;
+}
+
+.header {
+    background-color: blue;
+    grid-column: 1/5;
+}
+
+.left {
+    background-color: red;
+    grid-column: 1/2;
+}
+
+.main{
+    background-color: pink;
+    grid-column: 2/4;
+}
+
+.right {
+    background-color: yellow;
+}
+
+.footer {
+    background-color: black;
+    color: aliceblue;
+    grid-column: 2/5;
+}
