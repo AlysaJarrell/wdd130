@@ -225,6 +225,160 @@ footer a:hover {
 }
 
 
+/* css for FAQ page */
+#faq_content #opening{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#opening {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: stretch;
+
+}
+
+#opening_img{
+    /* max-width: 1143px; */
+    grid-column: 2/7;
+    grid-row: 1/2;
+    margin: 15px 0px;
+    box-shadow: 0px 0px 15px #164E79;
+    
+}
+#faq_title {
+    grid-column: 3/6;
+    grid-row: 2/3;
+    text-align: center;
+    justify-content: center;
+    background-color: #386641;
+    color: whitesmoke;
+    max-width: 800px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 3px solid #164E79;
+    box-shadow: 5px 5px 10px #164E79;
+    margin: 15px 0px;
+}
+#faq_content {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+.question {
+    color: #386641;
+}
+.q1, .q3, .q5 {
+    background-color: #72c3d5;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    /* box-shadow: 5px 5px 10px #164E79; */
+}
+.q1 p, .q3 p, .q5 p {
+    color: #164E79;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.q2, .q4, .q6 {
+    background-color: #f6f5ae;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    /* box-shadow: 5px 5px 10px #386641; */
+}
+.q2 p, .q4 p, .q6 p {
+    color: #164E79;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.q1 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+.q2 {
+    grid-column: 4/7;
+    grid-row: 3/4;
+}
+.q3 {
+    grid-column: 4/6;
+    grid-row: 4/5;
+
+}
+.beach-card {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.img-card {
+    border: 10px solid #386641;
+    box-shadow: 5px 5px 10px #386641;
+}
+.card h2 {
+    color: #164E79;
+    text-align: center;
+}
+.q4 {
+    grid-column: 2/7;
+    grid-row: 5/6;
+}
+.q4 p {
+    margin: 0px;
+    padding-bottom: 0px;
+}
+#equip_list {
+    line-height: 1.5em;
+    padding: 35px;
+    color: #386641;
+    font-size: .8em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0px;
+}
+.q4 dt{
+    color: #164E79;
+    font-size: 1em;
+    font-weight: bold;
+}
+#general {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+#list1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#list2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#list3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.q5 {
+    grid-column: 1/4;
+    grid-row: 6/7;
+}
+.blue-river-card{
+    grid-column: 4/5;
+    grid-row: 6/7;
+    align-items: center;
+}
+.q6{
+    grid-column: 5/8;
+    grid-row: 6/7;
+}
+
 /* for media display smaller than 900px */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
