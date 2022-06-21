@@ -379,6 +379,66 @@ footer a:hover {
     grid-row: 6/7;
 }
 
+
+/* Css for Contact Us page */
+.cupage form {
+    margin: 15px auto;
+    width: 400px;
+    /* outline */
+    padding: 1em;
+    border: 3px solid #164E79;
+    border-radius: 1em;
+}
+
+.cupage ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.cupage form li {
+    margin-top: 1em;
+}
+
+.cupage label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+.cupage input, .cupage textarea {
+    font: 1em "Comic Neue";
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #386641;
+}
+.cupage input:focus, .cupage textarea:focus {
+    border-color: #000;
+}
+.cupage textarea {
+    vertical-align: top;
+    height: 5em;
+}
+.cubutton {
+    padding-left: 90px;
+}
+button {
+    margin-left: .5em;
+    font-family: "Comic Neue";
+}
+#feedback {
+    color: whitesmoke;
+    background-color: #164E79;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    display: none;
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
 /* for media display smaller than 900px */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
