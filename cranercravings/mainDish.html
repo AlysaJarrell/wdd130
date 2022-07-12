@@ -10,7 +10,7 @@
 <body>
     <div id="content">
         <header>
-            <div id="logoBack"></div>
+            <!-- <div id="logoBack"></div> -->
             <a href="index.html" id="logoLink">
                     <img class="logo" src="images/cranercravingsgray.png" alt="Logo">
             </a>
@@ -23,21 +23,44 @@
             </nav>
         </header>
 
-        <section class="banner" id="mealOpen">
+        <div class="banner" id="mealOpen">
             <h1>Main Dishes</h1>
-        </section>
+        </div>
         
+        <button onclick="topFunction()" id="myBtn" title="Go to top">To the Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+
         <main>
             <section class="germanPancakes fav meal">
                 <h2>German Pancakes</h2>
-                <p> 6 Eggs
-                    1 cup Milk
-                    2 tbsp Sugar
-                    1 tsp Vanilla
+                <p> 6 Eggs <br>
+                    1 cup Milk <br>
+                    2 tbsp Sugar <br>
+                    1 tsp Vanilla <br>
                     Dash of Salt
-                    1 cup Flour
-                    (1/4 cup melted Butter for pan)
-                    
+                    1 cup Flour <br>
+                    (1/4 cup melted Butter for pan) <br>
+                     <br>
                     Preheat oven to 400 degrees. Blend ingredients together, pour into heated/warmed and buttered 9x13” pan. Bake 18-22 minutes or until golden brown.
                 </p>
             </section>
@@ -47,16 +70,16 @@
          
             <section class="tacoSoup fav meal">
                 <h2>Taco Soup</h2>
-                <p> 1lbs Hamburger 
-                    2 Tbsp Taco Seasoning
-                    1 ½ Tbsp Worcestershire Sauce
-                    Onion Powder to taste
-                    
-                    1 can Kidney Beans
-                    1 can Pinto Beans
-                    2 bottles Chili Sauce
-                    1.5 -2 cups corn (or 1 can)
-                    
+                <p> 1lbs Hamburger  <br>
+                    2 Tbsp Taco Seasoning <br>
+                    1 ½ Tbsp Worcestershire Sauce <br>
+                    Onion Powder to taste <br>
+                     <br>
+                    1 can Kidney Beans <br>
+                    1 can Pinto Beans <br>
+                    2 bottles Chili Sauce <br>
+                    1.5 -2 cups corn (or 1 can) <br>
+                     <br>
                     Brown hamburger with taco seasoning, Worcestershire sauce, onion powder and salt & pepper to taste.
                     Combine and heat all in crockpot (generally on low 3-4 hours) serve with Cheese, Chips, Sour Cream etc.
                 </p>
@@ -64,37 +87,35 @@
 
             <section class="sausageBalls fav meal">
                 <h2>Sausage Balls</h2>
-                <p> From Grandma Sellers
-                    Makes 48-ish 
-                    1lbs Sausage
-                    1lbs (about 4 cups) grated cheese (usually Cheddar)
-                    2.5- 3 cups Bisquick mix
-                    Mix all thoroughly. Roll into balls (about a tbsp in size). Bake at 350 degrees for 22-30 minutes or until golden brown. Makes about 48 balls.
+                <p> From Grandma Sellers <br> Makes 48-ish  <br> <br>
+                    1lbs Sausage <br>
+                    1lbs (about 4 cups) grated cheese (usually Cheddar) <br>
+                    2.5- 3 cups Bisquick mix <br> <br>
+                    Mix all thoroughly. Roll into balls (about a tbsp in size). <br> Bake at 350 degrees for 22-30 minutes or until golden brown. Makes about 48 balls.
                 </p> 
             </section>
 
             <section class="stuffedCroissants meal">
                 <h2>Stuffed Croissants</h2>
-                <p>
-                    Makes about 16
-                    2 cups cooked and shredded chicken
-                    1 (8-ounce) pkg cream cheese (softened)
-                    2 medium Green Onions (or to taste)
-                    Dash of Salt & Pepper
-                    1 Can (about 6.5 oz) Mushrooms (I chop them smaller)
-                    
-                    ½ cup butter
-                    Breadcrumbs
-                    Crescent Rolls
-                    Combine with ¼ cup softened butter. Put in center of crescent rolls and seal edges. Dip rolls in (¼ cup melted) then in Breadcrumbs. 
+                <p> Makes about 16 <br>
+                    2 cups cooked and shredded chicken <br>
+                    1 (8-ounce) pkg cream cheese (softened) <br>
+                    2 medium Green Onions (or to taste) <br>
+                    Dash of Salt & Pepper <br>
+                    1 Can (about 6.5 oz) Mushrooms (I chop them smaller) <br>
+                     <br>
+                    ½ cup butter <br>
+                    Breadcrumbs <br>
+                    Crescent Rolls <br> <br>
+                    Combine with ¼ cup softened butter. Put in center of crescent rolls and seal edges. Dip rolls in (¼ cup melted) then in Breadcrumbs. <br>
                     Bake at 350 degrees for 20 minutes. Top with Chicken Gravy
                 </p>
             </section>
             <section id="gravyCard">
                 <h3>Chicken Gravy</h3>
-                <p> 1 (10.75 oz) can Cream of Chicken Soup 
-                        ¼ cup Sour Cream
-                        1-2 Tbsp Milk
+                <p> 1 (10.75 oz) can Cream of Chicken Soup <br> 
+                        ¼ cup Sour Cream <br>
+                        1-2 Tbsp Milk <br> <br>
                         Mix all ingredients in a sauce pan and warm through. Serve with rolls.
                 </p>
             </section>
@@ -108,13 +129,13 @@
 
             <section class="tacoSalad fav meal">
                 <h2>Taco Salad/Walking Tacos</h2>
-                <p> 3-4 servings
-                    1lbs Ground Beef
-                    1 pkg Taco Seasoning
-                    Bag of your favorite Doritos (my Husband and I usually get 1 bag of Nacho Cheese and 1 bag of Cool Ranch)
-                    2 bags of Shredded Lettuce
-                    Shredded Cheese to your liking
-                    
+                <p> Makes 3-4 servings <br> <br>
+                    1lbs Ground Beef <br>
+                    1 pkg Taco Seasoning <br>
+                    Bag of your favorite Doritos (my Husband and I usually get 1 bag of Nacho Cheese and 1 bag of Cool Ranch) <br>
+                    2 bags of Shredded Lettuce <br>
+                    Shredded Cheese to your liking <br>
+                     <br>
                     Brown beef with taco seasoning. In your bowl (or in small bags of chips) add your chips, meat, lettuce and cheese. Enjoy!
                 </p>
             </section>
@@ -122,6 +143,8 @@
         </main>
         
         <footer>
+            <img id="footerLogo" src="images/cranercravingscolor.png" alt="Logo">
+            <h3><a href="index.html">Craner Cravings Home</a></h3>
             <h3>2022- Alysa Jarrell</h3>
             <h3><a href="site-plan.html">Site Plan</a></h3>
         </footer>

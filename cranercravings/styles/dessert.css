@@ -15,6 +15,7 @@
     margin: 15px 15px;
     /* box-shadow: 0px 0px 5px #868385; */
     border: 6px solid #e8c2ca;
+    /* grid-area: 1/1/2/2; */
 }
 
 header{
@@ -25,6 +26,7 @@ header{
     grid-template-columns: 350px auto; 
     font-size: x-large;
 }
+
 #logoBack{
     width: 220px;
     height: 220px;
@@ -33,6 +35,7 @@ header{
     justify-self: center;
     align-self: center;
 }
+
 #logoLink{
     /* padding: 5px; */
     justify-self: center;
@@ -110,13 +113,12 @@ h2, h3{
     color: #d1b3c4;
     font-family: "Sedgwick Ave";
 }
-
 p{
     color: #625f63;
     font-family: "Comic Neue";
 }
 .picture{
-    max-width: 350px;
+    max-width: 300px;
     box-shadow:0px 0px 2em #868385;
     border: 5px solid #625f63;
 }
@@ -127,47 +129,44 @@ section {
 
 /* <-------------------- This is the main code that will change between each page (start) -------------------> */
                 /* putting sections into the grid, and any additional individual edits */
-.germanPancakes{
-    grid-area: 1/2/2/10;
+
+.noBakes {
+    grid-area: 1/2/2/14;
     box-shadow: 0px 0px 1em #d1b3c4;
 }
-#germanimg {
-    grid-area: 1/11/2/14;
-    width: 100%;
-    justify-self: center;
-    align-self: center;
-}
-.tacoSoup {
-    grid-area: 2/3/3/8;
+
+.chocChip {
+    grid-area: 2/3/3/9;
     box-shadow: 0px 0px 1em #d1b3c4;
 }
-.sausageBalls{
-    grid-area: 2/9/3/13;
-    box-shadow: 0px 0px 1em #d1b3c4;
+#chocChipimg {
+    grid-area: 2/10/3/13;
+    align-items: center;
 }
-.stuffedCroissants{
+
+.cinnamonRolls {
     grid-area: 3/1/4/15;
     box-shadow: 0px 0px 1em #d1b3c4;
 }
-#gravyCard{
+#frostingCard{
     grid-area: 3/11/4/14;
     background-color: #fcefee;
     z-index: 3;
-    box-shadow: 0px 0px .5em #d1b3c4;
+    box-shadow: 0px 0px .5em #d1b3c4;  
 }
-#stuffedimg{
-    grid-area: 4/6/5/10;
-    justify-self: center;
-    align-self: center;
-    padding-bottom: 50px;
+.bananaBread {
+    grid-area: 4/3/5/9;
+    box-shadow: 0px 0px 1em #d1b3c4;
 }
-#tacoimg {
-    grid-area: 5/3/6/6;
-    justify-self: center;
-    align-self: center;
+#bananaimg {
+    grid-area: 4/10/5/12;
 }
-.tacoSalad {
-    grid-area: 5/7/6/13;
+
+#mudimg {
+    grid-area: 5/2/6/6;
+}
+.muddieBuddies {
+    grid-area: 5/7/6/14;
     box-shadow: 0px 0px 1em #d1b3c4;
 }
 

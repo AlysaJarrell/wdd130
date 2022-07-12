@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Craner Cravings | Desserts</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/dessert.css">
 </head>
 <body>
     <div id="content">
         <header>
-            <a href="index.html" id="logo-link">
-                <img src="images/cranercravingscolor.png" alt="Logo">
+            
+            <a href="index.html" id="logoLink">
+                <img class="logo" src="images/cranercravingsgray.png" alt="Logo">
             </a>
             <nav>
                 <div id="headerNav">
@@ -22,23 +23,45 @@
             </nav>
         </header>
 
-        <main>
-            <section class="banner" id="dessertOpen">
-                <h1>Desserts</h1>
-            </section>
+        <div class="banner" id="dessertOpen">
+            <h1>Desserts</h1>
+        </div>
 
+        <button onclick="topFunction()" id="myBtn" title="Go to top">To the Top</button>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+        <main>
             <section class="noBakes fav dessert">
                 <h2>No Bake Cookies</h2>
-                <p>
-                    2 cups Sugar
-                    ¼ cup unsweetened Cocoa Powder
-                    ½ cup Milk
-                    ½ cup Margarine
-                    Combine over medium heat. Bring to a boil stirring occasionally. Boil 1 minute then remove from heat and add:
-                    1 tsp Vanilla extract
-                    ½ cup Peanut Butter
-                    3 cups Quick Oats
-                    Pinch of Salt
+                <p> 2 cups Sugar <br>
+                    ¼ cup unsweetened Cocoa Powder <br>
+                    ½ cup Milk <br>
+                    ½ cup Margarine <br>  <br>
+                    Combine over medium heat. Bring to a boil stirring occasionally. <br> Boil 1 minute then remove from heat and add: <br> <br>
+                    1 tsp Vanilla extract <br>
+                    ½ cup Peanut Butter <br>
+                    3 cups Quick Oats <br>
+                    Pinch of Salt <br> <br>
                     Drop by rounded spoonful onto waxed paper. Allow cookies to cool at least one hour. (I usually place in freezer). Store in an airtight container.
                 </p>
             </section>
@@ -47,90 +70,91 @@
                 <h2>Chocolate Chip Cookies</h2>
                 <p>
                     <!-- */ left column/* -->
-                    2/3 cup Shortening
-                    2/3 cup (11 tbsp) softened Butter
-                    1 cup Sugar
-                    1 cup packed Brown Sugar
-                    2 Eggs
-                    2 tsp Vanilla or Almond Flavoring
+                    2/3 cup Shortening <br>
+                    2/3 cup (11 tbsp) softened Butter <br>
+                    1 cup Sugar <br>
+                    1 cup packed Brown Sugar <br>
+                    2 Eggs <br>
+                    2 tsp Vanilla or Almond Flavoring <br> <br>
                     <!-- */ right column/*  -->
-                    3 cups Flour
-                    1 tsp Baking Soda
-                    1 tsp Salt
-                    1 (12oz) pkg Chocolate Chips
-                    *For edible dough: 1/3 cup water, no egg, no soda
-                    
-                    Mix left column thoroughly (for softer, rounder cookie add ½ cup flour). 
-                    Stir in remaining ingredients. Drop dough by rounded spoonful 2 inches apart 
+                    3 cups Flour <br>
+                    1 tsp Baking Soda <br>
+                    1 tsp Salt <br>
+                    1 (12oz) pkg Chocolate Chips <br>
+                    *For edible dough: 1/3 cup water, no egg, no soda <br>
+                     <br>
+                    Mix shortening, butter, sugars, eggs and flavoring thoroughly. 
+                    Stir in remaining ingredients (for softer, rounder cookie add ½ cup flour). Drop dough by rounded spoonful 2 inches apart 
                     on a greased baking sheet. Bake at 375 degrees 8-10 minutes or until golden brown.
                 </p>
             </section>
 
-            <div class="picture" id="chocChipimg">
-                <img src="images/chocolateChipCookies.jpg" alt="Picture of Chocolate Chip Cookies">
+            <div id="chocChipimg">
+                <img class="picture" src="images/chocolateChipCookies.jpg" alt="Picture of Chocolate Chip Cookies">
             </div>
 
             <section class="cinnamonRolls dessert">
                 <h2>Cinnamon Rolls</h2>
-                <p>
-                    Makes 2 dozen
-                    2 Tbsp Yeast in
-                    ¼ cup Warm Water (and a little sugar)
-                    for 5+ minutes
-                    
-                    ½ cup Butter (melt till hot)
-                    2 cup Warm Water
-                    2 tsp Salt
-                    ½ cup Sugar
-                    2 eggs
-                    5-6 cups Flour (or More)
+                <p> Makes 2 dozen <br>
+                    2 Tbsp Yeast in <br>
+                    ¼ cup Warm Water (and a little sugar) <br>
+                    for 5+ minutes <br>
+                     <br>
+                    ½ cup Butter (melt till hot) <br>
+                    2 cup Warm Water <br>
+                    2 tsp Salt <br>
+                    ½ cup Sugar <br>
+                    2 eggs <br>
+                    5-6 cups Flour (or More) <br>
+                     <br>
+                    Mix together butter, sugar, eggs, and salt. Add 2 cups real warm water, mix again. Pour yeast over, stir. Add flour—one cup at a time—mixing after each one until you reach a good consistency. Knead on counter. Slam dough 10-12 times on counter. Knead a little more so not sticky. Raise 1 hour. Roll out, sprinkle butter, brown sugar, cinnamon. Roll up, cut, let raise again. Bake at 350 degrees for 18 minutes or until tops turn golden brown.
                 </p>
-                <div id="frostingCard">
+            </section>
+            <section id="frostingCard">
                     <h3>Frosting:</h3>
-                    <p> 1 cup Powdered Sugar
-                        2 cups Whipping Cream
+                    <p> 1 cup Powdered Sugar <br>
+                        2 cups Whipping Cream <br>
                         1 tsp Vanilla 
                         
-                        Mix together butter, sugar, eggs, and salt. Add 2 cups real warm water, mix again. Pour yeast over, stir. Add flour—one cup at a time—mixing after each one until you reach a good consistency. Knead on counter. Slam dough 10-12 times on counter. Knead a little more so not sticky. Raise 1 hour. Roll out, sprinkle butter, brown sugar, cinnamon. Roll up, cut, let raise again. Bake at 350 degrees for 18 minutes or until tops turn golden brown.
                     </p>
-                </div>
-            </section>
+            </section>    
 
             <section class="bananaBread fav dessert">
                 <h2>Banana Bread</h2>
-                <p>2 Eggs
-                    ½ cup Oil
-                    1 ½ Tbsp Milk
-                    1 tsp Lemon Juice
-                    1 cup Sugar
-                    ¼ tsp Salt
-                    3-4 Ripe Bananas
-                    Mix in blender until smooth.
-                    Combine in a large mixing bowl:
-                    2 cups Flour
-                    1 ½ tsp Baking Powder
-                    ½ tsp Baking Soda
-                    Then Pour blender contents into flour mixture
+                <p>2 Eggs <br>
+                    ½ cup Oil <br>
+                    1 ½ Tbsp Milk <br>
+                    1 tsp Lemon Juice <br>
+                    1 cup Sugar <br>
+                    ¼ tsp Salt <br>
+                    3-4 Ripe Bananas <br>
+                    Mix in blender until smooth. <br>
+                     <br>
+                    Combine in a large mixing bowl: <br>
+                    2 cups Flour <br>
+                    1 ½ tsp Baking Powder <br>
+                    ½ tsp Baking Soda <br>
+                    Then Pour blender contents into flour mixture. <br> <br>
                     Spray pans with Pam spray. Pour batter into 2 loaf pans or 4 mini loaf pans. Dot with butter. Sprinkle with cinnamon & sugar
                     Bake at 350 degrees. Muffins – 11-17 minutes  Loaf – 50-60 minutes  Mini Loafs – 24-30 minutes.
                     Let set for 5 minutes then remove from pan.</p>
             </section>
-            <div class="picture" id="bananaimg">
-                <img src="images/bananaBreadMuffins.jpg" alt="Banana Bread Muffins Image">
+            <div id="bananaimg">
+                <img class="picture"src="images/bananaBreadMuffins.jpg" alt="Banana Bread Muffins Image">
             </div>
 
-            <div class="picture" id="mudimg">
-                <img src="images/muddieBuddies.jpg" alt="Muddie Buddies Image">
+            <div id="mudimg">
+                <img class="picture" src="images/muddieBuddies.jpg" alt="Muddie Buddies Image">
             </div>
             <section class="muddieBuddies dessert">
                 <h2>Muddie Buddies</h2>
-                <p> 9 cups Rice Chex, Corn Chex, or Chocolate Chex cereal (or combination) (I prefer Rice Chex)
-                    1 cup Chocolate Chips (I prefer milk chocolate, but many people use semisweet)
-                    ½ cup Peanut Butter
-                    ¼ cup Butter or Margarine
-                    1 tsp Vanilla
-                    1 1/2- 2 cups Powdered Sugar
-                    
+                <p> 9 cups Rice Chex, Corn Chex, or Chocolate Chex cereal (or combination) (I prefer Rice Chex) <br>
+                    1 cup Chocolate Chips (I prefer milk chocolate, but many people use semisweet) <br>
+                    ½ cup Peanut Butter <br>
+                    ¼ cup Butter or Margarine <br>
+                    1 tsp Vanilla <br>
+                    1 1/2- 2 cups Powdered Sugar <br>
+                     <br>
                     Measure cereal into a large bowl and set aside. Melt chocolate chips, peanut butter and butter in a double boiler method until smooth. Stir in vanilla. Pour chocolate mixture over cereal, stir until evenly coated. In a large resealable bag add about half of your powder sugar coating the bag slightly. Add cereal and second half of powder sugar. Seal bag and shake until well coated. Store in airtight container or bags in the refrigerator.
                 </p>
             </section>
@@ -138,6 +162,8 @@
         </main>
         
         <footer>
+            <img id="footerLogo" src="images/cranercravingscolor.png" alt="Logo">
+            <h3><a href="index.html">Craner Cravings Home</a></h3>
             <h3>2022- Alysa Jarrell</h3>
             <h3><a href="site-plan.html">Site Plan</a></h3>
         </footer>

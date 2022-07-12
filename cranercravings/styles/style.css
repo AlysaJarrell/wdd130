@@ -15,6 +15,7 @@
     margin: 15px 15px;
     /* box-shadow: 0px 0px 5px #868385; */
     border: 6px solid #e8c2ca;
+    /* grid-area: 1/1/2/2; */
 }
 
 header{
@@ -25,6 +26,7 @@ header{
     grid-template-columns: 350px auto; 
     font-size: x-large;
 }
+
 #logoBack{
     width: 220px;
     height: 220px;
@@ -33,6 +35,7 @@ header{
     justify-self: center;
     align-self: center;
 }
+
 #logoLink{
     /* padding: 5px; */
     justify-self: center;
@@ -67,7 +70,7 @@ nav a:hover {
     padding-bottom: 25px;
     text-align: center;
     margin: 30px 400px;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
     box-shadow: 5px 5px 15px #868385;
 }
 
@@ -92,6 +95,7 @@ nav a:hover {
   
   #myBtn:hover {
     background-color: #e8c2ca; /* Add a dark-grey background on hover */
+    border: 2px solid #868385;
   }
 
 /* <-------------------- Main code -------------------> */
@@ -102,7 +106,8 @@ main {
     margin-left: 50px;
     margin-right: 50px;
     column-gap: 5px;
-    row-gap: 30px;
+    row-gap: 40px;
+    align-items: center;
 }
 h2{
     color: #d1b3c4;
@@ -141,11 +146,11 @@ section {
     box-shadow: 0px 0px 1em #d1b3c4;
 }
 .tacoSalad {
-    grid-area: 3/2/4/6;
+    grid-area: 3/3/4/7;
     box-shadow: 0px 0px 1em #d1b3c4;
 }
 .sausageBalls{
-    grid-area: 3/10/4/14;
+    grid-area: 3/9/4/13;
     box-shadow: 0px 0px 1em #d1b3c4;
 }
 .germanPancakes{
@@ -174,11 +179,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 50px 20px;
+    padding: 30px 50px 30px;
     margin-top: 150px;
 }
     
-
+#footerLogo {
+    max-width: 150px;
+    border: 1px solid #868385;
+}
 footer, footer h3, footer a {
     background-color: #e8c2ca;
     font-family: "Alike";
@@ -193,6 +201,6 @@ footer h3, footer a {
 footer a:hover {
     /* background-color: #d1b3c4; */
     color: #fcefee;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
